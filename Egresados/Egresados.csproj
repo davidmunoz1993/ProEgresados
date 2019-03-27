@@ -187,6 +187,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AgregarOfertasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RegistrarEmpresasController.cs" />
@@ -195,8 +196,10 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AgregarOferta.cs" />
     <Compile Include="Models\EgresadosContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\KEYAttribute.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\RegistrarEmpresa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -263,6 +266,11 @@
     <Content Include="Views\RegistrarEmpresas\Details.cshtml" />
     <Content Include="Views\RegistrarEmpresas\Edit.cshtml" />
     <Content Include="Views\RegistrarEmpresas\Index.cshtml" />
+    <Content Include="Views\AgregarOfertas\Create.cshtml" />
+    <Content Include="Views\AgregarOfertas\Delete.cshtml" />
+    <Content Include="Views\AgregarOfertas\Details.cshtml" />
+    <Content Include="Views\AgregarOfertas\Edit.cshtml" />
+    <Content Include="Views\AgregarOfertas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
