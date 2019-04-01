@@ -46,7 +46,7 @@ namespace Egresados.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AgregarOfertaID,FechaInicio")] AgregarOferta agregarOferta)
+        public ActionResult Create([Bind(Include = "AgregarOfertaID,FechaInicio,FechaFinal,Asunto,PerfilRequerido,Descripcion")] AgregarOferta agregarOferta)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Egresados.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AgregarOfertaID,FechaInicio")] AgregarOferta agregarOferta)
+        public ActionResult Edit([Bind(Include = "AgregarOfertaID,FechaInicio,FechaFinal,Asunto,PerfilRequerido,Descripcion")] AgregarOferta agregarOferta)
         {
             if (ModelState.IsValid)
             {

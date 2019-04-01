@@ -199,7 +199,6 @@
     <Compile Include="Models\AgregarOferta.cs" />
     <Compile Include="Models\EgresadosContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\KEYAttribute.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\RegistrarEmpresa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -271,6 +270,7 @@
     <Content Include="Views\AgregarOfertas\Details.cshtml" />
     <Content Include="Views\AgregarOfertas\Edit.cshtml" />
     <Content Include="Views\AgregarOfertas\Index.cshtml" />
+    <Content Include="Views\Shared\Class1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

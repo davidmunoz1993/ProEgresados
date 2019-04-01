@@ -46,7 +46,7 @@ namespace Egresados.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "RegistrarEmpresaID,NombreEmpresa")] RegistrarEmpresa registrarEmpresa)
+        public ActionResult Create([Bind(Include = "RegistrarEmpresaID,NombreEmpresa,Nit,DireccionEmpresa,NumeroEgresado,DescripccionEmpresa")] RegistrarEmpresa registrarEmpresa)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Egresados.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "RegistrarEmpresaID,NombreEmpresa")] RegistrarEmpresa registrarEmpresa)
+        public ActionResult Edit([Bind(Include = "RegistrarEmpresaID,NombreEmpresa,Nit,DireccionEmpresa,NumeroEgresado,DescripccionEmpresa")] RegistrarEmpresa registrarEmpresa)
         {
             if (ModelState.IsValid)
             {

@@ -19,8 +19,8 @@ namespace Egresados.Models
         {
         }
 
-        public System.Data.Entity.DbSet<Egresados.Models.RegistrarEmpresa> RegistrarEmpresas { get; set; }
-
         public System.Data.Entity.DbSet<Egresados.Models.AgregarOferta> AgregarOfertas { get; set; }
+
+        public System.Data.Entity.DbSet<Egresados.Models.RegistrarEmpresa> RegistrarEmpresas { get; set; }
     }
 }
