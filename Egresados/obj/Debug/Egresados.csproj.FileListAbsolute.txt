@@ -646,3 +646,6 @@ C:\Users\asus\source\repos\EGRESADOS\Egresados\obj\Debug\Egresados.csproj.CoreCo
 C:\Users\asus\source\repos\EGRESADOS\Egresados\obj\Debug\Egresados.csproj.CopyComplete
 C:\Users\asus\source\repos\EGRESADOS\Egresados\obj\Debug\Egresados.dll
 C:\Users\asus\source\repos\EGRESADOS\Egresados\obj\Debug\Egresados.pdb
+C:\Users\asus\source\repos\EGRESADOS\Egresados\obj\Debug\Egresados.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\EGRESADOS\Egresados\obj\Debug\Egresados.Migrations.AddRemaksField.resources
+C:\Users\asus\source\repos\EGRESADOS\Egresados\obj\Debug\Egresados.csproj.GenerateResource.cache

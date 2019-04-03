@@ -24,5 +24,9 @@ namespace Egresados.Models
         public System.Data.Entity.DbSet<Egresados.Models.RegistrarEmpresa> RegistrarEmpresas { get; set; }
 
         public System.Data.Entity.DbSet<Egresados.Models.Administrador> Administradors { get; set; }
+
+        public System.Data.Entity.DbSet<Egresados.Models.PublicacionAdmin> PublicacionAdmins { get; set; }
+
+        public System.Data.Entity.DbSet<Egresados.Models.PublicacionesEnEspera> PublicacionesEnEsperas { get; set; }
     }
 }

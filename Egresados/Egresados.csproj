@@ -191,9 +191,15 @@
     <Compile Include="Controllers\AgregarOfertasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PublicacionAdminsController.cs" />
+    <Compile Include="Controllers\PublicacionesEnEsperasController.cs" />
     <Compile Include="Controllers\RegistrarEmpresasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904031513481_AddRemaksField.cs" />
+    <Compile Include="Migrations\201904031513481_AddRemaksField.Designer.cs">
+      <DependentUpon>201904031513481_AddRemaksField.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -202,6 +208,8 @@
     <Compile Include="Models\EgresadosContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PublicacionAdmin.cs" />
+    <Compile Include="Models\PublicacionesEnEspera.cs" />
     <Compile Include="Models\RegistrarEmpresa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -278,6 +286,16 @@
     <Content Include="Views\Administradors\Details.cshtml" />
     <Content Include="Views\Administradors\Edit.cshtml" />
     <Content Include="Views\Administradors\Index.cshtml" />
+    <Content Include="Views\PublicacionAdmins\Create.cshtml" />
+    <Content Include="Views\PublicacionAdmins\Delete.cshtml" />
+    <Content Include="Views\PublicacionAdmins\Details.cshtml" />
+    <Content Include="Views\PublicacionAdmins\Edit.cshtml" />
+    <Content Include="Views\PublicacionAdmins\Index.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas\Create.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas\Delete.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas\Details.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas\Edit.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -294,6 +312,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904031513481_AddRemaksField.resx">
+      <DependentUpon>201904031513481_AddRemaksField.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
