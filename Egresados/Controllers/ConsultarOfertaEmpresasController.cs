@@ -66,11 +66,12 @@ namespace Egresados.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             ConsultarOfertaEmpresa consultarOfertaEmpresa = db.ConsultarOfertaEmpresas.Find(id);
-            if (consultarOfertaEmpresa == null)
+            AgregarOferta agregarOferta = db.AgregarOfertas.Find(id);
+            if (agregarOferta == null)
             {
                 return HttpNotFound();
             }
-            return View(consultarOfertaEmpresa);
+            return View(agregarOferta);
         }
 
         // POST: ConsultarOfertaEmpresas/Edit/5
@@ -78,15 +79,15 @@ namespace Egresados.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AgregarOfertaID,FechaInicio,FechaFinal,Asunto,PerfilRequerido,Descripcion")] ConsultarOfertaEmpresa consultarOfertaEmpresa)
+        public ActionResult Edit([Bind(Include = "AgregarOfertaID,FechaInicio,FechaFinal,Asunto,PerfilRequerido,Descripcion")] AgregarOferta agregarOferta)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(consultarOfertaEmpresa).State = EntityState.Modified;
+                db.Entry(agregarOferta).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(consultarOfertaEmpresa);
+            return View(agregarOferta);
         }
 
         // GET: ConsultarOfertaEmpresas/Delete/5
