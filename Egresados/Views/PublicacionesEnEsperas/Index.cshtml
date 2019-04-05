@@ -47,9 +47,11 @@
             @Html.DisplayFor(modelItem => item.EstadoPublicacion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PublicacionEnEspera }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PublicacionEnEspera }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PublicacionEnEspera })
+            <a class="btn btn-warning" href="/PublicacionesEnEsperas/Edit/@item.PublicacionEnEspera">Editar<samp class="glyphicon glyphicon-edit"> </samp></a>
+
+        <td> <a class="btn btn-info" href="/PublicacionesEnEsperas/Details/@item.PublicacionEnEspera">Detalles<samp class="glyphicon glyphicon-exclamation-sign"> </samp></a></td>
+
+        <td> <a class="btn btn-danger" href="/PublicacionesEnEsperas/Details/@item.PublicacionEnEspera">Eliminar<samp class="glyphicon glyphicon-trash"> </samp></a></td>
         </td>
     </tr>
 }
