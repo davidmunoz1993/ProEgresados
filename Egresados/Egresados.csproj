@@ -190,9 +190,14 @@
     <Compile Include="Controllers\AdministradorsController.cs" />
     <Compile Include="Controllers\AgregarOfertasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InformacionLaboralsController.cs" />
+    <Compile Include="Controllers\InformacionPersonalEgresadoesController.cs" />
+    <Compile Include="Controllers\InformacionProfesionalsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PublicacionAdminsController.cs" />
+    <Compile Include="Controllers\PublicacionesEnEsperas1Controller.cs" />
     <Compile Include="Controllers\PublicacionesEnEsperasController.cs" />
+    <Compile Include="Controllers\ReferenciasPersonalesController.cs" />
     <Compile Include="Controllers\RegistrarEmpresasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -207,9 +212,13 @@
     <Compile Include="Models\AgregarOferta.cs" />
     <Compile Include="Models\EgresadosContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\InformacionLaboral.cs" />
+    <Compile Include="Models\InformacionPersonalEgresado.cs" />
+    <Compile Include="Models\InformacionProfesional.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PublicacionAdmin.cs" />
     <Compile Include="Models\PublicacionesEnEspera.cs" />
+    <Compile Include="Models\ReferenciasPersonales.cs" />
     <Compile Include="Models\RegistrarEmpresa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -236,7 +245,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -296,6 +307,31 @@
     <Content Include="Views\PublicacionesEnEsperas\Details.cshtml" />
     <Content Include="Views\PublicacionesEnEsperas\Edit.cshtml" />
     <Content Include="Views\PublicacionesEnEsperas\Index.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas1\Create.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas1\Delete.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas1\Details.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas1\Edit.cshtml" />
+    <Content Include="Views\PublicacionesEnEsperas1\Index.cshtml" />
+    <Content Include="Views\InformacionPersonalEgresadoes\Create.cshtml" />
+    <Content Include="Views\InformacionPersonalEgresadoes\Delete.cshtml" />
+    <Content Include="Views\InformacionPersonalEgresadoes\Details.cshtml" />
+    <Content Include="Views\InformacionPersonalEgresadoes\Edit.cshtml" />
+    <Content Include="Views\InformacionPersonalEgresadoes\Index.cshtml" />
+    <Content Include="Views\ReferenciasPersonales\Create.cshtml" />
+    <Content Include="Views\ReferenciasPersonales\Delete.cshtml" />
+    <Content Include="Views\ReferenciasPersonales\Details.cshtml" />
+    <Content Include="Views\ReferenciasPersonales\Edit.cshtml" />
+    <Content Include="Views\ReferenciasPersonales\Index.cshtml" />
+    <Content Include="Views\InformacionLaborals\Create.cshtml" />
+    <Content Include="Views\InformacionLaborals\Delete.cshtml" />
+    <Content Include="Views\InformacionLaborals\Details.cshtml" />
+    <Content Include="Views\InformacionLaborals\Edit.cshtml" />
+    <Content Include="Views\InformacionLaborals\Index.cshtml" />
+    <Content Include="Views\InformacionProfesionals\Create.cshtml" />
+    <Content Include="Views\InformacionProfesionals\Delete.cshtml" />
+    <Content Include="Views\InformacionProfesionals\Details.cshtml" />
+    <Content Include="Views\InformacionProfesionals\Edit.cshtml" />
+    <Content Include="Views\InformacionProfesionals\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

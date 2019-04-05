@@ -28,5 +28,13 @@ namespace Egresados.Models
         public System.Data.Entity.DbSet<Egresados.Models.PublicacionAdmin> PublicacionAdmins { get; set; }
 
         public System.Data.Entity.DbSet<Egresados.Models.PublicacionesEnEspera> PublicacionesEnEsperas { get; set; }
+
+        public System.Data.Entity.DbSet<Egresados.Models.InformacionPersonalEgresado> InformacionPersonalEgresadoes { get; set; }
+
+        public System.Data.Entity.DbSet<Egresados.Models.ReferenciasPersonales> ReferenciasPersonales { get; set; }
+
+        public System.Data.Entity.DbSet<Egresados.Models.InformacionLaboral> InformacionLaborals { get; set; }
+
+        public System.Data.Entity.DbSet<Egresados.Models.InformacionProfesional> InformacionProfesionals { get; set; }
     }
 }
