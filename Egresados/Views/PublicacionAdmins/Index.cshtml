@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Publicaciones</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -47,9 +47,12 @@
             @Html.DisplayFor(modelItem => item.EstadoPublicacion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PublicacionAdminID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PublicacionAdminID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PublicacionAdminID })
+            <a class="btn btn-warning" href="/Administradors/Edit/@item.PublicacionAdminID">Editar<samp class="glyphicon glyphicon-edit"> </samp></a>
+
+        <td> <a class="btn btn-info" href="/Administradors/Details/@item.PublicacionAdminID">Detalles<samp class="glyphicon glyphicon-exclamation-sign"> </samp></a></td>
+
+        <td> <a class="btn btn-danger" href="/Administradors/Details/@item.PublicacionAdminID">Eliminar<samp class="glyphicon glyphicon-trash"> </samp></a></td>
+
         </td>
     </tr>
 }

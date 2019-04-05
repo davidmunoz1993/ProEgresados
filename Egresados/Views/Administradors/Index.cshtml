@@ -65,9 +65,12 @@
             @Html.DisplayFor(modelItem => item.Contraseña)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.AdministradorID }) |
-            @Html.ActionLink("Detalles", "Details", new { id=item.AdministradorID }) |
-            @Html.ActionLink("Borrar", "Delete", new { id=item.AdministradorID })
+            <a class="btn btn-warning" href="/Administradors/Edit/@item.AdministradorID">Editar<samp class="glyphicon glyphicon-edit"> </samp></a>
+
+        <td> <a class="btn btn-info" href="/Administradors/Details/@item.AdministradorID">Detalles<samp class="glyphicon glyphicon-exclamation-sign"> </samp></a></td>
+
+        <td> <a class="btn btn-danger" href="/Administradors/Details/@item.AdministradorID">Eliminar<samp class="glyphicon glyphicon-trash"> </samp></a></td>
+
         </td>
     </tr>
 }

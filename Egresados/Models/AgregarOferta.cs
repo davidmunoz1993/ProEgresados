@@ -12,8 +12,11 @@ namespace Egresados.Models
         [Key]
         public int AgregarOfertaID { get; set; }
         [DisplayName("Fecha de inicio")]
+        [DisplayFormat(DataFormatString = "{0:MMM dd, yyyy}")]
         public DateTime FechaInicio { get; set; }
+
         [DisplayName("Fecha de finalizacion")]
+        [DisplayFormat(DataFormatString = "{0:MMM dd, yyyy}")]
         public DateTime FechaFinal { get; set; }
         [DisplayName("Asunto")]
         public string Asunto { get; set; }

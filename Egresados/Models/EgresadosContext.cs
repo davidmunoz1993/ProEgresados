@@ -29,6 +29,7 @@ namespace Egresados.Models
 
         public System.Data.Entity.DbSet<Egresados.Models.PublicacionesEnEspera> PublicacionesEnEsperas { get; set; }
 
+<<<<<<< HEAD
         public System.Data.Entity.DbSet<Egresados.Models.InformacionPersonalEgresado> InformacionPersonalEgresadoes { get; set; }
 
         public System.Data.Entity.DbSet<Egresados.Models.ReferenciasPersonales> ReferenciasPersonales { get; set; }
@@ -36,5 +37,8 @@ namespace Egresados.Models
         public System.Data.Entity.DbSet<Egresados.Models.InformacionLaboral> InformacionLaborals { get; set; }
 
         public System.Data.Entity.DbSet<Egresados.Models.InformacionProfesional> InformacionProfesionals { get; set; }
+=======
+        public System.Data.Entity.DbSet<Egresados.Models.ConsultarOfertaEmpresa> ConsultarOfertaEmpresas { get; set; }
+>>>>>>> 2486992d88f5bebf98e2520fb282914138349d63
     }
 }
