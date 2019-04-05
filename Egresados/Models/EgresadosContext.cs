@@ -30,5 +30,7 @@ namespace Egresados.Models
         public System.Data.Entity.DbSet<Egresados.Models.PublicacionesEnEspera> PublicacionesEnEsperas { get; set; }
 
         public System.Data.Entity.DbSet<Egresados.Models.ConsultarOfertaEmpresa> ConsultarOfertaEmpresas { get; set; }
+
+        public System.Data.Entity.DbSet<Egresados.Models.Añadirpublicaciones> Añadirpublicaciones { get; set; }
     }
 }
